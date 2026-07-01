@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>.........................</title>
     <style>
-        header{
+        header {
             background-color: rgb(57, 14, 95);
             color: red;
             text-align: center;
@@ -13,23 +14,29 @@
             margin: 0, auto;
             padding: 16px;
             border: 5px solid red;
+        }
+        article{
             display: flex;
-        } 
-        main{
+        }
+
+        main {
             background-color: rgb(203, 244, 247);
             color: black;
             max-width: 800px;
             margin: 0, auto;
         }
-        img{
+
+        img {
             width: 120px;
             height: 80px;
         }
-        .artigo-autor{
+
+        .artigo-autor {
             font-weight: bold;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Michael Faraday</h1>
@@ -37,19 +44,22 @@
     </header>
 
     <main>
-        <img src="Faraday.png" alt="Ilustração de Michael Faraday ministrando uma palestra no anfiteatro de madeira da Royal Institution. Ele está atrás de uma bancada cheia de instrumentos científicos antigos, apontando para uma lousa com diagramas sobre indução eletromagnética, diante de uma plateia vitoriana."
-        <div>
+        <article>
+            <img src="Faraday.png"
+                alt="Ilustração de Michael Faraday ministrando uma palestra no anfiteatro de madeira da Royal Institution. Ele está atrás de uma bancada cheia de instrumentos científicos antigos, apontando para uma lousa com diagramas sobre indução eletromagnética, diante de uma plateia vitoriana."
+                <div>
             <h2>Descubra os grandes feitos de Faraday</h2>
-            <p class = artigo-autor>Por Luciana</p>
+            <p class=artigo-autor>Por Luciana</p>
             <button>😍 <span>0</span></button>
             <button>👍 <span>0</span></button>
-        </div>
+            </div>
+        </article>
     </main>
 </body>
 <script>
     const botoes = document.querySelectorAll("button");
 
-    botoes.forEach(function(botao){
+    botoes.forEach(function (botao) {
         botao.addEventListener("click", botaoClicado);
         function botaoClicado() {
             console.log("fui clicado");
@@ -61,4 +71,5 @@
 
 
 </script>
+
 </html>
